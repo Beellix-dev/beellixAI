@@ -241,6 +241,7 @@ GEMINI_IMAGE_MODEL = "gemini-3-pro-image-preview"
 
 MIT License
 
-## 🙏 致谢
+## 🙏 联系我们
+beellix@qq.com
 
 
