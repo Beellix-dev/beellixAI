@@ -298,7 +298,21 @@ function App() {
   }, [previewSlide]);
 
   return (
-    <div className="flex h-screen w-full bg-white overflow-hidden font-sans text-gray-800">
+    <div className="flex flex-col h-screen w-full bg-white overflow-hidden font-sans text-gray-800">
+      
+      {/* ============ 顶部标题栏 ============ */}
+      <header className="w-full h-12 border-b border-gray-200 bg-white flex items-center px-6 flex-shrink-0">
+        <div className="flex items-center gap-3">
+          <img src="/beellix-logo.png?v=4" alt="Beellix Logo" className="h-6 w-auto object-contain" />
+          <span className="text-lg font-semibold text-gray-800">beellix</span>
+        </div>
+        <div className="flex-1 flex justify-center">
+          <span className="text-xl font-bold text-blue-600">AI PPT</span>
+        </div>
+        <div className="w-[120px]"></div> {/* 占位，保持居中 */}
+      </header>
+
+      <div className="flex flex-1 overflow-hidden">
 
       {/* ============ 左侧面板 - 聊天界面 ============ */}
       <div className="w-[480px] flex-shrink-0 flex flex-col border-r border-gray-200 h-full relative bg-gray-50">
@@ -510,7 +524,7 @@ function App() {
           </div>
 
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center gap-2 text-blue-600 bg-blue-50 px-3 py-1.5 rounded-full">
-             <img src="/logo.png" alt="Logo" className="w-6 h-6" />
+             <img src="/beellix-logo.png?v=4" alt="Logo" className="w-8 h-8 object-contain" />
              <span className="text-sm font-semibold">AI PPT</span>
           </div>
 
@@ -694,6 +708,7 @@ function App() {
           </div>
         )}
       </div>
+      </div> {/* 闭合 flex 容器 */}
     </div>
   );
 }
