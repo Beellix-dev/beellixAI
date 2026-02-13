@@ -1,0 +1,17 @@
+[project]
+name = "beellix-aippt"
+version = "0.1.0"
+description = "AI 多 Agent 演示文稿生成器"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.34.0",
+    "httpx>=0.28.0",
+    "pydantic>=2.10.0",
+    "python-dotenv>=1.1.0",
+    "playwright>=1.48.0",
+    "fpdf2>=2.8.0",
+]
+
+[project.scripts]
+serve = "uvicorn main:app --host 0.0.0.0 --port 8000 --reload"
